@@ -1,3 +1,9 @@
 Twig Wrapper is a wrapper class for the Twig templating system.
 
 http://www.twig-project.org/
+
+Use:
+
+$twig = new TwigWrapper('/path/to/templates', 'template.twig');
+$twig->assign('name', 'data');
+$twig->display();
