@@ -6,10 +6,10 @@ Twig_Autoloader::register();
 
 class TwigWrapper
 {
-  private $loader;
-  private $twig;
-  private $template;
-  private $data;
+  protected $loader;
+  protected $twig;
+  protected $template;
+  protected $data;
   
   public function __construct($template_directory, $filename)
   {
