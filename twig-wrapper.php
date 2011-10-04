@@ -9,14 +9,15 @@ class TwigWrapper
   protected $loader;
   protected $twig;
   protected $template;
+  protected $filename;
   protected $data;
   
   public function __construct($template_directory, $filename)
   {
     $this->loader = new Twig_Loader_Filesystem($template_directory);
     $this->twig = new Twig_Environment($this->loader);
-    $this->template = $this->twig->loadTemplate($filename);
     
+    $this->filename = $filename;
     $this->data = array();
   }
   
@@ -27,6 +28,7 @@ class TwigWrapper
   
   public function display()
   {
+    $this->template = $this->twig->loadTemplate($this->filename);
     $this->template->display($this->data);
   }
 }
