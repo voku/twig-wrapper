@@ -26,6 +26,12 @@ class TwigWrapper
     $this->data[$key] = $value;
   }
   
+  public function fetch()
+  {
+    $this->template = $this->twig->loadTemplate($this->filename);
+    return $this->template->render($this->data);
+  }
+  
   public function display()
   {
     $this->template = $this->twig->loadTemplate($this->filename);
