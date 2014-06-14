@@ -6,6 +6,14 @@ http://www.twig-project.org/
 
 Use:
 
+```php
+<?php
+
 $twig = new \voku\twig\TwigWrapper('index.twig', array(__DIR__));
 $twig->assign('name', 'data');
 echo $twig->render();
+
+?>
+```
+
+
