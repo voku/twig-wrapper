@@ -4,6 +4,6 @@ http://www.twig-project.org/
 
 Use:
 
-$twig = new TwigWrapper('/path/to/templates', 'template.twig');
+$twig = new \voku\twig\TwigWrapper('index.twig', array(__DIR__));
 $twig->assign('name', 'data');
-$twig->display();
+echo $twig->render();
