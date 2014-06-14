@@ -1,9 +1,0 @@
-Twig Wrapper is a wrapper class for the Twig templating system.
-
-http://www.twig-project.org/
-
-Use:
-
-$twig = new \voku\twig\TwigWrapper('index.twig', array(__DIR__));
-$twig->assign('name', 'data');
-echo $twig->render();
