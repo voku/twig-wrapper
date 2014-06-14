@@ -1,6 +1,10 @@
 {
     "name": "twig-wrapper example",
     "description": "example for : Wrapper for Twig templating system",
+    "config": {
+      "vendor-dir": "vendor/composer/",
+      "github-protocols": ["git", "https", "http"]
+    },
     "require": {
         "voku/twig-wrapper": "dev-master"
     },
