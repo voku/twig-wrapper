@@ -1,7 +1,7 @@
 {
-    "name": "twig-wrapper",
+    "name": "voku/twig-wrapper",
     "description": "Wrapper for Twig templating system",
-    "keywords": ["php", "utf", "utf8", "clean"],
+    "keywords": ["twig", "templating", "template", "wrapper"],
     "version": "1.0.0",
     "type": "library",
     "homepage": "https://github.com/voku/twig-wrapper",
@@ -21,8 +21,8 @@
       }
     ],
     "autoload": {
-      "classmap": [
-        "src"
-      ]
+      "psr-0": {
+        "voku": "src"
+      }
     }
 }
