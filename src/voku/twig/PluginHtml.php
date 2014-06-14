@@ -61,7 +61,11 @@ class PluginHtml extends Twig_Extension
   {
     $html = '
     <script src="//ajax.googleapis.com/ajax/libs/jquery/' . $jQueryVersion . '/jquery.js"></script>
-    <script>window.jQuery || document.write(\'<script src="' . $localPath . '"></script>\')</script>
+    <script>
+      if (typeof jQuery == \'undefined\') {
+        document.write(unescape("%3Cscript src=\'' . $localPath. '\' type=\'text/javascript\'%3E%3C/script%3E"));
+      }
+    </script>
     ';
 
     return $html;
