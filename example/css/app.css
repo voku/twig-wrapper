@@ -10016,6 +10016,12 @@ td.visible-print
         display: none !important;
     }
 }
+/* line 2, ../scss/_base.scss */
+footer
+{
+    clear: both;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
